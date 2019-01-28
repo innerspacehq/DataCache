@@ -2,7 +2,7 @@ require(devtools)
 
 # Package building
 document('DataCache')
-check_doc('DataCache')
+check_man('DataCache')
 build('DataCache')
 install('DataCache')
 
