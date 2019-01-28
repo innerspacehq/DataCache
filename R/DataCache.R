@@ -36,7 +36,7 @@
 #'
 #' @export
 #'
-data.cache <- function(FUN,
+data_cache <- function(FUN,
 					  frequency=daily,
 					  cache.dir='cache',
 					  cache.name='Cache',
