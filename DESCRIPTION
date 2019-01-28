@@ -1,20 +1,8 @@
 Package: DataCache
-Type: Package
-Title: Package for managing data caches
-Version: 0.9
-Date: 2015-11-06
-Author: Jason Bryer <jason@bryer.org>
-Maintainer: Jason Bryer <jason@bryer.org>
-URL: http://jason.bryer.org/DataCache, http://github.com/jbryer/DataCache
-BugReports: https://github.com/jbryer/DataCache/issues
-Description: Utility function to manage data caches.
-License: GPL
-LazyLoad: yes
-VignetteBuilder: knitr
-Depends:
-    R (>= 3.0)
-Imports:
-    parallel,stats,lubridate
-Suggests:
-    devtools,weatherData,knitr
+Title: Data Cache
+Description: Cache data
+Version: 1.0
+License: MIT + file LICENSE
+Author: Someone <so@meone.com>
+Maintainer: Someone <so@meone.com>
 RoxygenNote: 6.1.1

@@ -35,6 +35,7 @@
 #'   \link{yearly}, \link{nMinutes}, \link{nHours}, \link{nDays}
 #'
 #' @export
+#'
 data.cache <- function(FUN,
 					  frequency=daily,
 					  cache.dir='cache',
