@@ -48,19 +48,6 @@ created at \code{timestamp} is stale.
 See the Vignette (\code{vignette('DataCache')}) or demo
 (\code{demo('WeatherCache')}) for more information.
 }
-\examples{
-\dontrun{
-library('weatherData')
-loadWeatherData <- function(station_id='ALB') {
-		results <- list(getDetailedWeather(station_id, Sys.Date()))
-		names(results) <- paste0('weather.', station_id)
-		return(results)
-}
-data.cache(loadWeatherData)
-head(weather.ALB)
-}
-
-}
 \seealso{
 \link{daily}, \link{hourly}, \link{weekly}, \link{monthly}, 
   \link{yearly}, \link{nMinutes}, \link{nHours}, \link{nDays}
