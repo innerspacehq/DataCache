@@ -23,4 +23,4 @@ Other frequencies: \code{\link{daily}},
   \code{\link{nMinutes}}, \code{\link{weekly}},
   \code{\link{yearly}}
 }
-
+\concept{frequencies}

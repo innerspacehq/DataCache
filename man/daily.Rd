@@ -20,4 +20,4 @@ Other frequencies: \code{\link{hourly}},
   \code{\link{now}}, \code{\link{weekly}},
   \code{\link{yearly}}
 }
-
+\concept{frequencies}

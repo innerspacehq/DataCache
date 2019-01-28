@@ -1,7 +1,5 @@
 require(devtools)
 
-setwd('~/Dropbox/Projects')
-
 # Package building
 document('DataCache')
 check_doc('DataCache')
@@ -17,7 +15,7 @@ build_vignettes('DataCache')
 check('DataCache')
 
 # Running the package
-librdevtools::install_github('jbryer/DataCache')
+librdevtools::install_github('innerspacehq/DataCache')
 vignette('DataCache')
 demo('WeatherCache')
 

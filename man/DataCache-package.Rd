@@ -33,4 +33,3 @@ See the Vignette for more information: \code{vignette('DataCache')}.
 }
 \keyword{cache}
 \keyword{data}
-

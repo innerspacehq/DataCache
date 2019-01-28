@@ -1,13 +1,12 @@
 #### DataCache: R Package for Managing Data Caches
 
-[![Build Status](https://api.travis-ci.org/jbryer/DataCache.svg)](https://travis-ci.org/jbryer/DataCache?branch=master)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/DataCache)](http://cran.r-project.org/package=DataCache)
+[![Build Status](https://api.travis-ci.org/innerspacehq/DataCache.svg)](https://travis-ci.org/innerspacehq/DataCache?branch=master)
 
 
 The latest development version can be installed using the `devtools` package:
 
 ```
-devtools::install_github('jbryer/DataCache')
+devtools::install_github('innerspacehq/DataCache')
 ```
 
 #### Example

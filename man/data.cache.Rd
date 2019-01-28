@@ -64,4 +64,3 @@ head(weather.ALB)
 \link{daily}, \link{hourly}, \link{weekly}, \link{monthly}, 
   \link{yearly}, \link{nMinutes}, \link{nHours}, \link{nDays}
 }
-

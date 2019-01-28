@@ -26,6 +26,13 @@ For this example, we wish to periodically load weather data using the `weatherDa
 
 ```r
 library('DataCache')
+```
+
+```
+Error in library("DataCache"): there is no package called 'DataCache'
+```
+
+```r
 library('weatherData')
 ```
 
@@ -56,11 +63,7 @@ The `data.cache` returns invisibly (i.e. will not be printed if not assinged to 
 ```
 
 ```
-No cached data found. Loading intial data...
-```
-
-```
-[1] "2015-11-06 14:41:26 EST"
+Error in data.cache(loadWeatherData): could not find function "data.cache"
 ```
 
 ```r
@@ -68,13 +71,7 @@ head(weather.ALB)
 ```
 
 ```
-                 Time TemperatureF
-1 2015-11-06 00:51:00         63.0
-2 2015-11-06 01:09:00         63.0
-3 2015-11-06 01:51:00         62.1
-4 2015-11-06 02:51:00         61.0
-5 2015-11-06 03:51:00         62.1
-6 2015-11-06 04:51:00         62.1
+Error in head(weather.ALB): object 'weather.ALB' not found
 ```
 
 The `cache.info` function provides a summary of all the cached data files. It will also provide columns (which can be set using the `stale` parameter) indicating whether that data file is stale according to various time periods.
@@ -85,10 +82,7 @@ cache.info()
 ```
 
 ```
-                          file             created   age_mins hourly_stale
-1 Cache2015-11-06 14:41:26.rda 2015-11-06 14:41:26 0.02158712        FALSE
-  daily_stale weekly_stale monthly_stale yearly_stale
-1       FALSE        FALSE         FALSE        FALSE
+Error in cache.info(): could not find function "cache.info"
 ```
 
 Old data caches can easily be loaded this way. For example, the following will load the first data cache created:
@@ -120,7 +114,7 @@ ls()
 ```
 
 ```
-[1] "cache.date1"     "loadWeatherData" "weather.ALB"    
+[1] "loadWeatherData"
 ```
 
 We will wait 60 seconds so that the cache becomes stale. We will also call `data.cache` twice in a row to show that they will each return the same cached data, but the second call will not spawn a new background process to refresh the data.
@@ -132,11 +126,7 @@ Sys.sleep(60)
 ```
 
 ```
-Loading more recent data, returning lastest available.
-```
-
-```
-[1] "2015-11-06 14:41:26 EST"
+Error in data.cache(loadWeatherData, frequency = nMinutes(1)): could not find function "data.cache"
 ```
 
 ```r
@@ -144,12 +134,7 @@ Loading more recent data, returning lastest available.
 ```
 
 ```
-Data is being loaded by another process. The process has been running for 0.384583950042725 seconds. If this is an error delete cache/Cache.lck
-Loading more recent data, returning lastest available.
-```
-
-```
-[1] "2015-11-06 14:41:26 EST"
+Error in data.cache(loadWeatherData, frequency = nMinutes(1)): could not find function "data.cache"
 ```
 
 It is easy to have multiple data caches. Using the same `loadWeatherData` function we will create a spearate data cache for weather data from JFK.
@@ -160,7 +145,7 @@ weather.JFK <- data.cache(loadWeatherData, cache.name='JFK', station_id='JFK')
 ```
 
 ```
-No cached data found. Loading intial data...
+Error in data.cache(loadWeatherData, cache.name = "JFK", station_id = "JFK"): could not find function "data.cache"
 ```
 
 ```r
@@ -168,7 +153,7 @@ head(weather.JFK)
 ```
 
 ```
-[1] "2015-11-06 14:42:27 EST"
+Error in head(weather.JFK): object 'weather.JFK' not found
 ```
 
 ```r
@@ -176,10 +161,7 @@ cache.info(cache.name='JFK')
 ```
 
 ```
-                        file             created   age_mins hourly_stale
-1 JFK2015-11-06 14:42:27.rda 2015-11-06 14:42:27 0.02559777        FALSE
-  daily_stale weekly_stale monthly_stale yearly_stale
-1       FALSE        FALSE         FALSE        FALSE
+Error in cache.info(cache.name = "JFK"): could not find function "cache.info"
 ```
 
 

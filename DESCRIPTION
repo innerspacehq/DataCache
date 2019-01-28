@@ -17,4 +17,4 @@ Imports:
     parallel,stats,lubridate
 Suggests:
     devtools,weatherData,knitr
-RoxygenNote: 5.0.0
+RoxygenNote: 6.1.1
