@@ -6,3 +6,5 @@ r_packages:
   - knitr
   - lubridate
   - parallel
+r_github_packages:
+  - Ram-N/weatherData
