@@ -59,6 +59,7 @@ loadWeatherData <- function(station_id='ALB') {
 data.cache(loadWeatherData)
 head(weather.ALB)
 }
+
 }
 \seealso{
 \link{daily}, \link{hourly}, \link{weekly}, \link{monthly}, 

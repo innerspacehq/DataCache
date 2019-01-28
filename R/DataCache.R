@@ -33,7 +33,7 @@
 #' @param ... other parameters passed to \code{FUN}.
 #' @seealso \link{daily}, \link{hourly}, \link{weekly}, \link{monthly}, 
 #'   \link{yearly}, \link{nMinutes}, \link{nHours}, \link{nDays}
-#' @export
+#'
 #' @examples
 #' \dontrun{
 #' library('weatherData')
@@ -45,6 +45,8 @@
 #' data.cache(loadWeatherData)
 #' head(weather.ALB)
 #' }
+#'
+#' @export
 data.cache <- function(FUN,
 					  frequency=daily,
 					  cache.dir='cache',
