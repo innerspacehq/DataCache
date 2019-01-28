@@ -34,18 +34,6 @@
 #' @seealso \link{daily}, \link{hourly}, \link{weekly}, \link{monthly}, 
 #'   \link{yearly}, \link{nMinutes}, \link{nHours}, \link{nDays}
 #'
-#' @examples
-#' \dontrun{
-#' library('weatherData')
-#' loadWeatherData <- function(station_id='ALB') {
-#' 		results <- list(getDetailedWeather(station_id, Sys.Date()))
-#' 		names(results) <- paste0('weather.', station_id)
-#' 		return(results)
-#' }
-#' data.cache(loadWeatherData)
-#' head(weather.ALB)
-#' }
-#'
 #' @export
 data.cache <- function(FUN,
 					  frequency=daily,
