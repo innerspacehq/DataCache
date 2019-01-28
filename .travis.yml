@@ -2,6 +2,7 @@ language: R
 sudo: required
 warnings_are_errors: true
 r_packages:
+  - devtools
   - rmarkdown
   - knitr
   - lubridate
